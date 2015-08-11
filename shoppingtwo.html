@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>shoppinglist_addto</title>
+<meta charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+
+<body>
+	<div class="top" align="center">
+		<table class="itemsone" align="center" bordercolor="#6297b0" cellpadding="12">
+			<tbody>
+			<tr class="headings">
+				<th>Item, Amount Needed</th>
+				<th>Clear</th>
+			</tr>
+			
+			<form><tr align="center">
+				<td><input type="text" name="itemname" id="field1"></td>
+				<td><input type="reset" value="x" name="remove" id="remove" /></td>
+			</tr></form>
+			</tbody>
+		</table>
+	</div> <!--end item enter form-->
+	
+	
+	<button class="btn" align="center" type="button" id="mainheader">ADD<br />Item to List<br /><i class="fa fa-shopping-cart fa-2x"></i></button>
+	
+
+	<section class="list">
+	<div class="listcontainer">	
+	<ul style="list-style-type:none" id="added">
+		<li class="plusone"><input type="checkbox" id="listfield">&nbsp<span>Juice</span>&nbsp<input type="reset" value="x" id="right">
+		</li>
+		<li class="plusone"><input type="checkbox">&nbsp<span>Cantaloupe, 5</span>&nbsp<input type="reset" value="x" id="right">
+		</li>
+	</ul>
+	</div>
+	</section>
+	</body>
+	</html>
+	
