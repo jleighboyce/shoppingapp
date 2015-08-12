@@ -24,6 +24,9 @@
   	border: dashed white .08em;
   	-webkit-font-smoothing: antialiased;
 }
+button:focus {
+  outline: 0;
+}
 button:hover {
 	color: white;
 	background-color: #a2cd5a;
