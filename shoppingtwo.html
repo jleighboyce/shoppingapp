@@ -12,17 +12,16 @@
 </head>
 
 <body>
+	
 	<div class="top" align="center">
 		<table class="itemsone" align="center" bordercolor="#6297b0" cellpadding="12">
 			<tbody>
 			<tr class="headings">
-				<th>Item, Amount Needed</th>
-				<th>Clear</th>
+				<th>Shopping Item, Amount Needed</th>
 			</tr>
 			
 			<form><tr align="center">
 				<td><input type="text" name="itemname" id="field1"></td>
-				<td><input type="reset" value="x" name="remove" id="remove" /></td>
 			</tr></form>
 			</tbody>
 		</table>
@@ -31,7 +30,7 @@
 	
 	<button class="btn" align="center" type="button" id="mainheader">ADD<br />Item to List<br /><i class="fa fa-shopping-cart fa-2x"></i></button>
 	
-
+	
 	<section class="list">
 	<div class="listcontainer">	
 	<ul style="list-style-type:none" id="added">
@@ -40,8 +39,11 @@
 		<li class="plusone"><input type="checkbox">&nbsp<span>Cantaloupe, 5</span>&nbsp<input type="reset" value="x" id="right">
 		</li>
 	</ul>
+	<div class="resetbutton">
+	<button class="clearlist" type="button" align="center" id="deleteall">Clear List</button></div>
 	</div>
 	</section>
+	
 	</body>
 	</html>
 	

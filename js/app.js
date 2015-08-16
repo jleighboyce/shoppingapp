@@ -21,6 +21,10 @@ $(document).ready(function () {
 		$(this).remove();
 	});
 
+	$('#deleteall').click(function() {
+		$('.plusone').empty();
+	});
+
 });
 
 

@@ -1,39 +1,49 @@
 .top {
 	width: 100%;
 	position: relative;
-  margin-top: 2em;
-  display: block;
+  margin-top: 1.5em;
+  display: inline-block;
 }
 
+.header {
+  width: 100%;
+  height: 4em;
+  display: inline-block;
+  color: white;
+  margin: -8em auto;
+  font-family: 'Muli', 'Open-Sans';
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
 
 .btn {
   display: block;
-  margin: 2.5em auto;
-	background-color: #6297b0;
+  margin: 2em auto;
+	background-color: #36454f;
 	border-radius: 10em;
 	text-align: center;
 	vertical-align: middle;
-	height: 8em;
-  width: 8em;
+	height: 7em;
+  width: 7em;
     
   	
   	font-family: 'Muli', 'Open-Sans';
-  	line-height: 1.6em;
+  	line-height: 1.25em;
   	color: white;
   	font-size: 1em;
   	border: dashed white .08em;
   	-webkit-font-smoothing: antialiased;
+}
+.btn > i {
+  color: white;
 }
 button:focus {
   outline: 0;
 }
 button:hover {
 	color: white;
-	background-color: #a2cd5a;
+	background-color: #6297b0;
 	-webkit-font-smoothing: antialiased;
-}
-.icons {
-	color: white;
 }
 
 td > strong {
@@ -42,9 +52,11 @@ td > strong {
 
 .headings 	{
 	background: transparent;
-    color: crimson;
-    font-size: 118%;
+    color: white;
+
+    font-size: 125%;
     font-family: 'Muli', 'Open-Sans';
+    font-weight: bold;
     -webkit-font-smoothing: antialiased;
     letter-spacing: .075em;  
 }
@@ -54,14 +66,43 @@ td > strong {
     border-radius: 10em;
     
 }
+.clearlist {
+  display: inline-block;
+  font-family: 'Muli', 'Open-Sans';
+    line-height: 1em;
+    color: white;
+    font-size: .75em;
+    border: dashed white .1em;
+    -webkit-font-smoothing: antialiased;
+  height: 4em;
+  width: 4em;
+  text-align: center;
+  border-radius: 2em;
+  background-color: #36454f;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+}
 
+.resetbutton {
+  display: block;
+  height: 3.5em;
+  width: 3.5em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.clearlist:hover {
+  background-color: #6297b0;
+  color: white;
+
+}
 .listcontainer {
   margin: 0 auto;
   width: 20%;
   text-align: left;
   border-left: solid thin #6297b0;
   border-right: solid thin #6297b0;
-
   padding-left: 1.3em;
   padding-right: 1.3em;
 }
@@ -70,11 +111,12 @@ table {
 	max-width: 40%;
     display: table;
     border-collapse: separate;
-    border-spacing: .7em;
+    border-spacing: .25em;
     border-style: solid;
     border-width: thin;
     border-radius: 10em;
     -moz-border-radius: 10em;
+    background-color: #36454f;
 }
 ul {
   padding: 0;
@@ -84,7 +126,7 @@ ul {
   display: block;
   padding: 0;
   border-color: none;
-  margin: 3em auto;
+  margin: 2.5em auto;
   
 }
 #right {
@@ -94,9 +136,7 @@ ul {
 strong {
   color: white;
 }
-i {
-  color: white;
-}
+
 ul li {
   font-size: 1.75m;
   color: white;
@@ -104,14 +144,20 @@ ul li {
   -webkit-font-smoothing: antialiased;
   line-height: 175%;
 }
+
+input[type=text] {
+  background: lightgrey;
+}
 input[type=text]:hover {
-  background: lightyellow;
+  background: white;
 }
 input[type=checkbox] + span {
   color: white;
+  font-size: 1.25em;
+  font-style: bold;
 } 
 input[type=checkbox]:checked + span {
-  color: #a2cd5a;
+  color: #36454f;
   text-decoration: line-through;
 } 
 input[type=checkbox]
@@ -133,12 +179,12 @@ span {
 }
 html {
 	background: url('https://images.unsplash.com/reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?q=80&fm=jpg&s=6558af5e85eae171b9fd1971fec6ae61') no-repeat center center fixed; 
-  -webkit-background-size: 85%;
-  -moz-background-size: 85%;
-  -o-background-size: 85%;
-  background-size: 85%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: crimson;
-  margin: 0;
+  
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px) {
@@ -170,9 +216,18 @@ table {
     border-collapse: collapse;
     border-spacing: .7em;
     border-style: solid;
-    border-width: thin;
-    
+    border-width: thin;   
 }
+
+input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(.6); /* IE */
+  -moz-transform: scale(.6); /* FF */
+  -webkit-transform: scale(.6); /* Safari and Chrome */
+  -o-transform: scale(.6); /* Opera */
+  padding: 2em;
+}
+
 .list {
   display: block;
   padding: 0;
@@ -184,7 +239,7 @@ table {
   display: block;
   margin: 0 auto;
   padding: 0em;
-  }
+}
 html {
   background: url('https://images.unsplash.com/reserve/bnW1TuTV2YGcoh1HyWNQ_IMG_0207.JPG?q=80&fm=jpg&s=6558af5e85eae171b9fd1971fec6ae61') no-repeat center center fixed; 
   -webkit-background-size: 100%;
